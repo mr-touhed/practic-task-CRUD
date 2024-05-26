@@ -15,8 +15,8 @@ const Login = () => {
 
     const googleLogin = async () =>{
         try {
-            await signInWithGoogle()
-            if(user){
+           const result =  await signInWithGoogle()
+            if(result){
                return  navigate("/dashboard")
             }
         } catch (error) {

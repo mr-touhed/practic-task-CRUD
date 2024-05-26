@@ -7,6 +7,7 @@ import AllProducts from "../pages/admin/AllProducts";
 import EditProduct from "../pages/admin/EditProduct";
 import Login from "../pages/auth/Login";
 import ProtectRoute from "../pages/auth/ProtectRoute";
+import Profile from "../pages/admin/Profile";
 
  const routes = createBrowserRouter([
     {
@@ -41,6 +42,11 @@ import ProtectRoute from "../pages/auth/ProtectRoute";
                         element:<EditProduct/>,
                         loader:({params}) => fetch(`http://localhost:3000/shoes/${params.id}`)
                     },
+                    {
+                        path:"",
+                        index:true,
+                        element:<Profile/>
+                    }
                 ]
             }
         ]
