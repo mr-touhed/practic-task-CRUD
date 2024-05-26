@@ -1,8 +1,8 @@
-# React + Vite
+# React + CRUD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CRUD operation in react with json server (rest api)
 
-Currently, two official plugins are available:
+working Project Command:
 
-- start server command -  `$npm run server`
+- start server -  `$npm run server`
 - run this project - ` npm run dev`
